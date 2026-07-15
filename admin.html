@@ -1,0 +1,21 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Admin</title></head><body>
+<h2>لوحة الإدارة</h2>
+<p>تم تفعيل الحماية بالمصادقة.</p>
+<button onclick="logout()">تسجيل الخروج</button>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script>
+const firebaseConfig = {
+  apiKey: "AIzaSyB-und0ze38bbleAZHlqJhueFwrFaSNVaw",
+  authDomain: "elfethbatna.firebaseapp.com",
+  databaseURL: "https://elfethbatna-default-rtdb.firebaseio.com",
+  projectId: "elfethbatna",
+  storageBucket: "elfethbatna.firebasestorage.app",
+  messagingSenderId: "164820408359",
+  appId: "1:164820408359:web:b706a4d70b35bcc3549602"
+};
+firebase.initializeApp(firebaseConfig);
+
+firebase.auth().onAuthStateChanged(u=>{if(!u) location.href='login.html';});
+function logout(){firebase.auth().signOut().then(()=>location.href='login.html');}
+</script></body></html>
