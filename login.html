@@ -20,6 +20,6 @@ firebase.initializeApp(firebaseConfig);
 function login(){
 firebase.auth().signInWithEmailAndPassword(
 email.value,password.value
-).then(()=>location.href='admin.html').catch(e=>alert(e.message));
+).then(()=>location.href='index.html').catch(e=>alert(e.message));
 }
 </script></body></html>
