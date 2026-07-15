@@ -816,6 +816,7 @@ h1{ font-size:38px; }
   <div class="slider-container">
     <div class="slides" id="slider-track">
       <!-- سيتم ملء الصور ديناميكياً بواسطة الجافاسكربت -->
+	  <img src="https://g.top4top.io/p_3844qexgb1.png">
     </div>
     <div class="slider-dots" id="slider-dots-container">
       <!-- سيتم توليد النقاط ديناميكياً -->
@@ -831,7 +832,7 @@ h1{ font-size:38px; }
   <form id="purchaseForm" onsubmit="handleFormSubmit(event)">
     <div class="form-group">
       <label>الاسم الكامل</label>
-      <input type="text" id="cust-name" required placeholder="مثال: أمينة بن عيسى">
+      <input type="text" id="cust-name" required placeholder="نة بن عيسى">
     </div>
     <div class="form-group">
       <label>رقم الهاتف</label>
@@ -986,7 +987,7 @@ h1{ font-size:38px; }
   <img src="girl-dress.jpg" alt="صورة الإشعار" class="social-proof-img" id="sp-img">
   <div class="social-proof-content">
     <div class="social-proof-title" id="sp-title">طلب جديد من أم ساجد (باتنة)!</div>
-    <div style="color:var(--primary-color); font-weight:bold; margin-top:2px;" id="sp-details">فستان وردي - مقاس 4 سنوات</div>
+    <div style="color:var(--primary-color); font-weight:bold; margin-top:2px;" id="sp-details">مقاس 6 اشهر</div>
     <div class="social-proof-time" id="sp-time">قبل دقيقة واحدة ⏳</div>
   </div>
 </div>
@@ -1047,7 +1048,7 @@ h1{ font-size:38px; }
 </div>
 <div class="box">
 <h3>العنوان</h3>
-<p id="text-address">طريق تازولت، لامجي، ملاخسو<br>بجانب قاعة العلاج ملاخسو<br>بالقرب من مطعم بيتي سابقًا</p>
+<p id="text-address">طريق تازولت،<br>بجانب قاعة العلاج ملاخسو<br>بالقرب من مطعم بيتي سابقًا</p>
 </div>
 </div>
 <footer>
@@ -1159,7 +1160,7 @@ h1{ font-size:38px; }
 </div>
 
 <script>
-const FIREBASE_URL = "https://el-feth-shop-default-rtdb.firebaseio.com/orders";
+const FIREBASE_URL = "firebase deploy --only hosting:el-feth-shop";
 const ADMIN_PASSWORD = "elfathbatna05";
 let selectedShippingType = 'home';
 let currentProductPrice = 2500;
